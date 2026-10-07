@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+:root{
+  --cream:#fffaf1; --ivory:#fffdf8; --maroon:#7d1830; --red:#a52a3b;
+  --gold:#c69b45; --gold2:#ead49a; --ink:#3e2b2b; --muted:#765f5f;
+  --shadow:0 18px 50px rgba(85,45,25,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans","Noto Sans Devanagari",sans-serif;line-height:1.7}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(circle at 10% 15%,#e7c46b 0 2px,transparent 3px),radial-gradient(circle at 80% 30%,#d98c9b 0 1.5px,transparent 3px);background-size:180px 180px,230px 230px;z-index:-1}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1160px,92%);margin:auto}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,250,241,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(198,155,69,.25)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:Georgia,serif;color:var(--maroon);font-size:1.2rem;font-weight:700}
+.brand small{display:block;color:var(--gold);font:600 .65rem "DM Sans";letter-spacing:.12em;text-transform:uppercase}
+.links{display:flex;gap:24px;font-size:.92rem;font-weight:600;color:#5e4646}
+.links a:hover,.links a.active{color:var(--maroon)}
+.menu{display:none;background:none;border:0;font-size:1.7rem;color:var(--maroon)}
+.hero{min-height:86vh;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(115deg,rgba(255,250,241,.95),rgba(255,245,235,.72)),url("assets/maa-04.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:auto -10% -120px;height:240px;background:radial-gradient(ellipse,#fff6db 0%,transparent 65%);filter:blur(12px)}
+.hero-content{text-align:center;max-width:820px;padding:90px 10px;position:relative;z-index:1}
+.kicker{color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.75rem}
+h1,h2,h3{font-family:Georgia,"Noto Sans Devanagari",serif;line-height:1.25;color:var(--maroon);margin:.5em 0}
+h1{font-size:clamp(2.7rem,7vw,5.5rem)}
+h2{font-size:clamp(2rem,4vw,3.1rem)}
+h3{font-size:1.35rem}
+.subtitle{font-size:1.15rem;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 21px;border-radius:999px;background:var(--maroon);color:#fff;margin:10px 6px;font-weight:700;box-shadow:0 10px 24px rgba(125,24,48,.2);transition:.25s}
+.btn:hover{transform:translateY(-2px)}
+.btn.light{background:#fff;border:1px solid var(--gold2);color:var(--maroon)}
+section{padding:85px 0}
+.center{text-align:center}
+.section-head{max-width:760px;margin:0 auto 35px;text-align:center}
+.card{background:rgba(255,253,248,.88);border:1px solid rgba(198,155,69,.24);border-radius:28px;padding:30px;box-shadow:var(--shadow)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.photo{border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:#eee;cursor:pointer;box-shadow:0 8px 24px rgba(60,30,20,.12)}
+.photo img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.photo:hover img{transform:scale(1.045)}
+.mantra{font-family:"Noto Sans Devanagari",serif;text-align:center;font-size:1.18rem;line-height:2.1;color:#5d3434}
+.quote{border-left:4px solid var(--gold);padding:8px 0 8px 22px;color:#694c4c}
+.timeline{display:flex;gap:18px;align-items:center;margin-top:25px}
+.year{min-width:96px;height:96px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff8df,#e8c978);color:var(--maroon);font-weight:800}
+.feature{display:flex;gap:18px;align-items:flex-start}
+.icon{width:46px;height:46px;border-radius:14px;background:#fff2d0;display:grid;place-items:center;font-size:1.3rem;flex:none}
+.page-hero{padding:85px 0 55px;text-align:center;background:linear-gradient(180deg,#fff5df,#fffaf1)}
+.page-hero h1{font-size:clamp(2.4rem,6vw,4.5rem)}
+.gallery-filter{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin:25px 0 35px}
+.filter{border:1px solid var(--gold2);background:#fff;border-radius:999px;padding:8px 16px;color:var(--maroon);cursor:pointer;font-weight:700}
+.filter.active,.filter:hover{background:var(--maroon);color:#fff}
+.aarti{white-space:pre-line;font-family:"Noto Sans Devanagari",serif;font-size:1.08rem;line-height:2.05}
+.event{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center}
+.event img{border-radius:26px;max-height:520px;width:100%;object-fit:cover}
+footer{background:#4b2027;color:#fff0e4;padding:50px 0 28px;margin-top:50px}
+footer h3,footer a{color:#fff0e4}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+.copy{border-top:1px solid rgba(255,255,255,.15);margin-top:30px;padding-top:20px;font-size:.86rem;color:#e7c9bd}
+.modal{position:fixed;inset:0;background:rgba(20,10,10,.82);display:none;align-items:center;justify-content:center;padding:25px;z-index:100}
+.modal.show{display:flex}
+.modal img{max-height:88vh;max-width:94vw;border-radius:16px}
+.close{position:absolute;top:20px;right:25px;background:none;border:0;color:#fff;font-size:2rem}
+.floating{position:fixed;right:18px;bottom:18px;z-index:40;background:#fff;border:1px solid var(--gold2);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:var(--maroon);box-shadow:var(--shadow)}
+@media(max-width:850px){
+  .links{display:none;position:absolute;top:74px;left:0;right:0;background:var(--cream);padding:15px 6%;flex-direction:column;gap:8px;border-bottom:1px solid var(--gold2)}
+  .links.open{display:flex}.menu{display:block}.grid2,.event{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.photo-grid{grid-template-columns:1fr 1fr}
+  section{padding:65px 0}.hero{min-height:78vh}.footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){.grid3{grid-template-columns:1fr}.photo-grid{grid-template-columns:1fr 1fr}.card{padding:22px}.navin{height:68px}.links{top:68px}}
